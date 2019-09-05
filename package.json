@@ -1,0 +1,32 @@
+{
+  "name": "@mite-ui/scroll-view",
+  "version": "1.0.2",
+  "description": "scroll view for react component",
+  "main": "lib/index",
+  "module": "es/index",
+  "files": [
+    "es",
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "toolkit run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-component/scroll-view.git"
+  },
+  "author": "zunyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/react-component/scroll-view/issues"
+  },
+  "homepage": "https://github.com/react-component/scroll-view#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.5.5",
+    "react": "^16.9.0"
+  },
+  "devDependencies": {
+    "@mite-ui/toolkit": "1.0.6"
+  }
+}
