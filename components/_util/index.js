@@ -25,17 +25,6 @@ export const offsetDeep = function offsetDeep(node, top = 0) {
   }
 }
 
-export const fixFlightNo = function fixFlightNo(val) {
-  if (!val) {
-    return '';
-  } else if (val.length < 3 || /^\D/.test(val)) {
-    return ''.toUpperCase.call(val);
-  } else {
-    return `TV${val}`;
-  }
-}
-
-
 function _fixZero (str) {
   if (typeof str !== 'string') {
     str = '' + str
@@ -106,4 +95,22 @@ export const debounce = function debounce (func, delay) {
   }
 
   return debounced;
+}
+
+export const useArrState = curry(function useArrState(setState, arr, prop, val) {
+  return setState(
+    arr
+      .filter(item =>
+        prop(item) !== prop(val)
+      )
+      .concat([val])
+  );
+})
+
+
+function _fixZero (str) {
+  if (typeof str !== 'string') {
+    str = '' + str
+  }
+  return str.replace(/^([0-9])$/, '0$1')
 }
