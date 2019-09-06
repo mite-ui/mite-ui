@@ -106,11 +106,3 @@ export const useArrState = curry(function useArrState(setState, arr, prop, val) 
       .concat([val])
   );
 })
-
-
-function _fixZero (str) {
-  if (typeof str !== 'string') {
-    str = '' + str
-  }
-  return str.replace(/^([0-9])$/, '0$1')
-}

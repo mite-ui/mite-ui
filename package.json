@@ -1,6 +1,6 @@
 {
   "name": "mite-ui",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "ui components for react",
   "main": "lib/index",
   "module": "es/index",
