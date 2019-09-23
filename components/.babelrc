@@ -11,6 +11,7 @@
         "regenerator": true,
         "useESModules": false
       }
-    ]
+    ],
+    ["import", {"libraryName": "antd-mobile", "style": true}]
   ]
 }
