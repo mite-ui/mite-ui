@@ -1,4 +1,4 @@
-# scroll-view
+# Mite UI
 
 ui components for react
 
